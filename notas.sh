@@ -1,39 +1,44 @@
 #!/bin/bash
-if [ $1 == 10 ]; then
-  echo "$2 Tu nota es sobresaliente"
+nota=$1
+nombre=$2 
+calificacion=""
+mensaje=""
+
+if [ $nota == 10 ]; then
+  calificacion="sobresaliente"
   
 else
-  if [ $1 == 9 ]; then
-    echo "tu nota es sobresaliente"
+  if [ $nota == 9 ]; then
+    calificacion="sobresaliente"
   else
-    if [ $1 == 8 ]; then
-      echo "tu nota es Notable"
+    if [ $nota == 8 ]; then
+      calificacion="Notable"
     else
-      if [ $1 == 7 ]; then 
-        echo "tu nota es Notable"
+      if [ $nota == 7 ]; then 
+        calificacion="Notable"
       else 
-        if [ $1 == 6 ]; then
-          echo "tu nota es Bien"
+        if [ $nota == 6 ]; then
+          calificacion=" Bien"
         else
-          if [ $1 == 5 ]; then
-            echo "tu nota es Suficiente"
+          if [ $nota == 5 ]; then
+            calificacion="Suficiente"
           else
-             if [ $1 == 4 ]; then
-               echo "tu nota es Insuficiente estudia mas cafarna"
+             if [ $nota == 4 ]; then
+               calificacion="Insuficiente"
             else
-              if [ $1 == 3 ]; then
-                echo "$2 tu nota es como tu Muy deficiente"
+              if [ $nota == 3 ]; then
+               calificacion= "Muy deficiente"
               else
-                if [ $1 == 2 ]; then
-                  echo "dedicate a hosteleria tienes un Muy deficiente"
+                if [ $nota == 2 ]; then
+                  calificacion="Muy deficiente"
                 else
-                  if [ $1 == 1 ]; then
-                    echo "jajajaaj tu nota es Muy deficiente"
+                  if [ $nota == 1 ]; then
+                    calificacion="Muy deficiente"
                   else
-                    if [ $1 == 0 ]; then
-                      echo "tu nota es Muy deficiente"
+                    if [ $nota == 0 ]; then
+                      calificacion="Suspenso absoluto"
                     else
-                      echo "Fracaso absoluto Nota erronea"
+                      calificacion="Fracaso absoluto Nota erronea"
                     fi
                   fi
                 fi
@@ -45,3 +50,5 @@ else
     fi
   fi
 fi
+
+echo "$nombre, tu calificacion es $calificacion"  
