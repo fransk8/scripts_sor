@@ -1,9 +1,14 @@
 #!/bin/bash
-nota=$1
-nombre=$2 
+if [ $1 == -k ]; then
+  echo Introduce tu nombre:
+  read nombre
+  echo Introduce tu nota 0-10:
+  read nota
+else 
+  nota=$1
+  nombre=$2
+fi
 calificacion=""
-mensaje=""
-
 if [ $nota == 10 ]; then
   calificacion="sobresaliente"
   
@@ -51,4 +56,6 @@ else
   fi
 fi
 
-echo "$nombre, tu calificacion es $calificacion"  
+mensaje="tu nota es $calificacion,$nombre"
+echo "$mensaje"
+
