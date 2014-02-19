@@ -8,5 +8,7 @@ if [ "$nice" -ge 0 ]; then
   quantum=$[(20-$nice)*5]
 else 
   echo "El numero es menor que 0"
-  quantum=$
+  quantum=$[(20-$nice)+20]
+
+fi 
 

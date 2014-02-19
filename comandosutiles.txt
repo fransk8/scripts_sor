@@ -1,0 +1,8 @@
+COMANDOS UTILIES Y SIGNFICADO
+ 
+^ = Empieza por X
+\s= Se divide por espacios o tabuladores
+*= Repetir de ceroa infinito
+[123]=Cualquier caracter que este dentro de 123
+$= La variable del script
+.=cualquier caracter
